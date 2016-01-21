@@ -3,7 +3,7 @@
 Execute the main script using
 
 ```
-python main.js image.jpg -s
+python main.py image.jpg -s
 ```
 
 ### Usage
