@@ -7,9 +7,7 @@
 
 import os, sys, logging, argparse
 from datetime import datetime
-from blur_red import BlurRed
 from image_convolution import ImageConvolution
-from histogram import Histogaram
 
 # program constants
 DEFAULT_LOGGING_FORMAT = "%(message)s"
@@ -44,12 +42,10 @@ def main(pause_on_error=False):
     try:
 
         # instanciate processing class
-        # filter = BlurRed(args.input, 10)
-        # filter = ImageConvolution(args.input)
-        filter = Histogaram(args.input)
+        filter = ImageConvolution(args.input)
 
         # save the file
-        # filter.image.save(args.output)
+        filter.image.save(args.output)
 
         # show the file
         if (args.show):

@@ -35,12 +35,12 @@ class Histogaram:
 
 
         # greyscale_image = self.image.convert('L')
-        # rgb_channels = self.image.split()
+        rgb_channels = self.image.split()
         # plt_image = self.plotImageHistogram(self.image)
 
         # plt_greyscale = self.plotGreyscaleHistogram(greyscale_image)
-        # plt_color = self.plotColorHistogram(rgb_channels)
-        # plt_color.show()
+        plt_color = self.plotColorHistogram(rgb_channels)
+        plt_color.show()
         # plt_greyscale.show()
 
     def compareHistograms(self, histogram1, histogram2):
